@@ -20,7 +20,7 @@ new_window 1pixel
 
 # gaps config
 gaps inner 10
-gaps outer 12
+gaps outer 8
 smart_gaps on
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
