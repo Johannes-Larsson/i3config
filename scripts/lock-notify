@@ -1,0 +1,2 @@
+#!/bin/bash
+notify-send "Locking the screen in 10 seconds.." -u critical

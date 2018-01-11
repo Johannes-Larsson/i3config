@@ -1,0 +1,8 @@
+#!/bin/bash
+
+network=$(iwgetid -r)
+if [ "$network" == "" ]; then
+  echo "<span foreground='red'>Not Connected</span>"
+else
+  echo $network
+fi
