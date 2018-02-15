@@ -12,11 +12,11 @@ Not quite required:
 - compton
 - xautolock
 - feh
+- https://github.com/acrisci/playerctl
 - https://github.com/SuperPrower/i3lock-fancier
 
 # installation
-clone into ~.config/, delete ~.config/i3/, rename i3config to i3
+clone into ~.config/, make sure it's named i3
 
 wallpapers go in ~/Pictures/wallpapers/, lockscreen goes in ~/Pictures/lock.png.
 
-My i3blocks-scripts (and some others) are not currently on github.
