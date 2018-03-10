@@ -78,6 +78,12 @@ interval=5
 min_width=  100.00%
 #separator=false
 
+[power]
+command=/home/johannes/.config/i3/scripts/power
+interval=5
+min_width=12.12 W
+separator=false
+
 #[load_average]
 #interval=10
 
