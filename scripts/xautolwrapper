@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ $(pgrep xautolwrapper --count) -gt 1 ] 
+then
+	pkill xautolwrapper --oldest
+fi
+
+if [ "$1" = "-e" ] 
+then
+	xautolock -enable && notify-send -u low "xautolock enabled"
+elif [ "$1" = "-d" ] 
+then
+	if [ "$2" = "-t" ]
+	then
+		if [ "$3" != "" ]
+		then
+			t=$3
+		else
+			t=30
+		fi
+	else
+		t=0
+	fi
+
+	
+	if [ $t != 0 ]
+	then 
+		msg="Enabling in $t minutes"
+	fi
+
+	xautolock -disable && notify-send -u low "xautolock disabled" "$msg"
+
+	if [ $t != 0 ]
+	then
+		sleep $(($t * 60))
+		xautolwrapper -e
+	fi
+else
+	echo "You have to provide either -e for enable or -d for disable"
+fi
+
+
+
+	

@@ -31,6 +31,9 @@ markup=none
 align=center
 
 
+[window title]
+command=xdotool getactivewindow getwindowname
+interval=1
 
 # Generic media player support
 #
